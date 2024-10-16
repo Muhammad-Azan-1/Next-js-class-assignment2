@@ -1,0 +1,53 @@
+.main{
+    height: 210px;
+    background-color: black;
+  
+ 
+
+}
+
+.p{
+    padding:30px;
+    text-align: center;
+    color: azure;
+    border-bottom: 2px solid rgb(231, 202, 40) ;
+    transition: color 0.5s, border-bottom 0.5s ease;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+
+.p:hover{
+    color: rgb(231, 202, 40); 
+    cursor: pointer;
+
+}
+
+.footerlinks{
+    display: flex;
+   justify-content: center;
+    gap: 20px;
+
+}
+
+.footerContent ul li{
+    list-style-type: none;
+
+}
+.footerContent ul li a{
+    color: white;
+    position: relative;
+    top: 20px;
+    text-decoration:none;
+    transition: color 0.5s, border-bottom 0.5s ease;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.footerContent ul li a:hover{
+   color: rgb(231, 202, 40); 
+    border-bottom: 2px solid rgb(231, 202, 40) ;
+   
+}
+
+

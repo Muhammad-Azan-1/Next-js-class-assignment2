@@ -1,0 +1,239 @@
+.main{
+
+    background-color: rgb(231, 202, 40) ;
+    padding: 0px 80px 0px 0px;
+    min-height: 100vh; /* Ensure background stretches for the entire viewport */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+
+  .h1{
+  
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+   
+
+  }
+
+
+  .image{
+    object-fit: cover;
+    margin-top: 30px;
+    border-radius: 15px;
+    /* width: 500px;
+    height: 550px; */
+    animation: Image 3s 1 forwards ease-in;
+  
+    
+    
+  }
+
+.text{
+    font-size: 17px;
+    margin-left: 100px;
+    animation: TexTs 3s 1 forwards ease-in;
+    /* margin-bottom: 20px; */
+    /* margin-top: 30px; */
+  
+}
+
+@keyframes TexTs {
+
+    0% {
+      transform: translateX(-800px);
+      opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+  
+}
+
+  @keyframes Image {
+    
+    0% {
+      transform: translateX(600px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+
+  @media (max-width: 1180px) {
+    .image {
+      width: 400px;
+      height: 450px;
+    }
+
+    .text{
+        font-size: 15px;
+        margin-left: 80px;
+        animation: TexTs 3s 1 forwards ease-in; 
+      
+    }
+  }
+
+  @media (max-width: 1001px) {
+    .image {
+      width: 350px;
+      height: 400px;
+    }
+
+    .text{
+        font-size: 12px;
+        margin-left: 70px;
+        animation: TexTs 3s 1 forwards ease-in; 
+      
+    }
+  }
+
+
+  
+  @media (max-width: 852px) {
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 50px 0px 50px 0px;
+    }
+    .image {
+      width: 400px;
+      height: 450px;
+      animation: none;
+      margin-left: 40px;
+      margin-bottom: 30px;
+    }
+
+    .text{
+        font-size: 15px;
+        margin-left: 100px;
+        animation: TexTs 3s 1 forwards ease-in; 
+        animation: none;
+        margin-top: 55px;
+        margin-left: 60px;
+        padding-top: 80px;
+
+      
+    }
+  }
+  
+
+   @media (max-width: 500px){
+
+    .image {
+        width: 350px;
+        height: 400px;
+        margin-left: 10px;
+        margin-bottom: 80px;
+        padding-bottom: 80px;
+      }
+    
+      .text {
+        text-align: center;
+        margin-left: 0px;
+        padding-top: 100px;
+        margin-top: 55px;
+        font-size: 13px;
+      }
+  
+      .h1{
+          font-size: 8px;
+        
+  }
+
+  } 
+  @media (max-width: 450px) {
+    .image {
+      width: 350px;
+      height: 400px;
+      margin-left: 10px;
+    }
+  
+    .text {
+      text-align: center;
+      margin-left: 0px;
+      padding: 10px;
+      font-size: 13px;
+    }
+
+    .h1{
+        font-size: 8px;
+        
+    }
+  }
+
+  @media (max-width: 400px) {
+    .image {
+      width: 300px;
+      height: 350px;
+      margin-right: 20px;
+      margin-left: 10px;
+      padding: 10px;
+      margin-bottom: 50px;
+      padding-bottom: 100px;
+    }
+  
+    .text {
+      text-align: center;
+      margin-left: 0px;
+      padding: 10px;
+      font-size: 12px;
+      padding-top: 100px;
+      margin-top: 90px;
+    }
+
+    .h1{
+        font-size: 8px;
+        
+    }
+  }
+
+  
+  /* // animation for when screen goes to 850 pixes */
+
+
+  @media (max-width: 850px) {
+
+    .image{
+        animation: Image2 2s 1 forwards ease-in;
+    }
+
+    .text{
+       
+        animation: TexTs2 2s 1 forwards ease-in;
+    }
+    
+    @keyframes TexTs2 {
+
+        0% {
+          transform: translateY(-800px);
+          opacity: 0;
+        }
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+      
+    }
+    
+      @keyframes Image2 {
+        
+        0% {
+          transform: translateY(600px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+  }
+  

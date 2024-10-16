@@ -1,0 +1,25 @@
+.aboutUsContainer {
+    background-color: #f4f4f9; /* Light grey background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 100px auto; /* Center the container */
+    margin-top: 240px;
+  
+}
+
+.aboutUsTitle {
+    color: #2c3e50; /* Dark blue */
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    margin-bottom: 50px;
+   
+}
+
+.aboutUsDescription {
+    color: #34495e; /* Slightly lighter blue */
+    font-size: 18px;
+    line-height: 1.6;
+}
